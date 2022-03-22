@@ -1,0 +1,16 @@
+<h1 style="text-align: center">Login</h1>
+
+<div class="dev" style="text-align: center">
+  <div class="alert alert-primary" role="alert">
+    <% if (messages.error) { %> <%= messages.error%> <% }%>
+  </div>
+
+  <form action="/users/login" method="POST">
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email" /><br />
+    <label for="password">password:</label><br />
+    <input type="text" id="password" name="password" /><br /><br />
+    <input type="submit" value="Submit" />
+  </form>
+  <a href="/users/register">Register</a>
+</div>
